@@ -59,6 +59,7 @@ This stpes help me to get the my target data called calories protein ration whic
 To make sure the data frame display nice
 
 The dataframe after cleaning are shown below:
+
 | name                                 |     id |   minutes |   contributor_id | submitted   |   n_steps |   n_ingredients |   avg_rating |   calories |   total_fat |   sugar |   sodium |   protein |   saturated_fat |   carbohydrates |   cal_pro_ratio |
 |:-------------------------------------|-------:|----------:|-----------------:|:------------|----------:|----------------:|-------------:|-----------:|------------:|--------:|---------:|----------:|----------------:|----------------:|----------------:|
 | 1 brownies in the world    best ever | 333281 |        40 |           985201 | 2008-10-27  |        10 |               9 |            4 |      138.4 |          10 |      50 |        3 |         3 |              19 |               6 |        46.1333  |
@@ -90,6 +91,7 @@ The plot shows that the relationship between minutes and average rating for minu
 
 
 ### Interesting Aggregates
+
 | rating_above_3   |   False |    True |
 |:-----------------|--------:|--------:|
 | False            | 6.99545 | 6.91119 |
@@ -120,7 +122,7 @@ Column picked : name (added column that shows length of name)
 
 <iframe src="assets/stepemp_n.html" width=800 height=600 frameBorder=0></iframe>
 
- ** p_value=0.0, p-value <0.05 reject that the missingness of average rating does not depend on number of steps **
+ **p_value=0.0, p-value <0.05 reject that the missingness of average rating does not depend on number of steps**
 
 
 ##### For not depend on (MCAR)
@@ -134,14 +136,14 @@ Column picked : name (added column that shows length of name)
 
 <iframe src="assets/emp_lenn.html" width=800 height=600 frameBorder=0></iframe>
 
- ** p_value=0.267, p-value >0.05 fail to reject that missingness of avg_rating depends on lenghth of name **
+ **p_value=0.267, p-value >0.05 fail to reject that missingness of avg_rating depends on lenghth of name**
 
 ---
 
 ### Hypothesis Testing
-** Null Hypothesis ** : The average rating of healthy high protein food higher than others food is due to random chance
+**Null Hypothesis** : The average rating of healthy high protein food higher than others food is due to random chance
 
-** Alternative Hypothesis ** : The average rating of healthy high protein food is higher than normal is not due to random chance
+**Alternative Hypothesis** : The average rating of healthy high protein food is higher than normal is not due to random chance
 
 Choice of test statistics: The mean of average rating
 
